@@ -1,0 +1,20 @@
+-Classes are a tool that developers use to quickly produce similar objects.
+-As you can see, classes are a great way to reduce duplicate code and debugging time.
+
+primer: Klasa i 2 instance te klase
+
+class Surgeon {
+  constructor(name, department) {
+    this.name = name;
+    this.department = department;
+  }
+}
+const surgeonCurry = new Surgeon('Curry','Cardiovascular'); //The NEW keyword calls the constructor(),
+console.log(surgeonCurry.department);                       // runs the code inside of it, and then returns the new instance.
+
+const surgeonDurant = new Surgeon('Durant','Orthopedics');
+console.log(surgeonDurant.department);
+
+>The SUPER keyword calls the constructor of the parent class. 
+In this case, super(name) passes the name argument of the Cat class to the constructor of the Animal class.
+When the Animal constructor runs, it sets this._name = name; for new Cat instances.
